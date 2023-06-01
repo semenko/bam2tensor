@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "bam2tensor"
+version = "0.1.0"
+description = ""
+authors = ["semenko"]
+readme = "README.md"
+packages = [{include = "bam2tensor"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bam2tensor = 'bam2tensor.__main__:main'
